@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
+RUN apt-get update --fix-missing
 RUN apt-get install -y net-tools iputils-ping
 RUN apt-get install -y ssh gcc wget vim
 
